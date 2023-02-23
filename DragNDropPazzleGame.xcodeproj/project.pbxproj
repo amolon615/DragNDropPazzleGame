@@ -11,6 +11,14 @@
 		ACCD58B429A6C561003078B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD58B329A6C561003078B7 /* ContentView.swift */; };
 		ACCD58B629A6C563003078B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCD58B529A6C563003078B7 /* Assets.xcassets */; };
 		ACCD58B929A6C563003078B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCD58B829A6C563003078B7 /* Preview Assets.xcassets */; };
+		ACCD58C029A6E86F003078B7 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD58BF29A6E86F003078B7 /* Constraints.swift */; };
+		ACCD58C229A6E8CD003078B7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD58C129A6E8CD003078B7 /* Model.swift */; };
+		ACCD58C429A6E8EB003078B7 /* PuzzleVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD58C329A6E8EB003078B7 /* PuzzleVIewModel.swift */; };
+		ACCD58C929A6E965003078B7 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD58C829A6E965003078B7 /* Loader.swift */; };
+		ACCD58CB29A6EBCC003078B7 /* Knewave-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACCD58CA29A6EBCC003078B7 /* Knewave-Regular.ttf */; };
+		ACCD58CF29A6EE78003078B7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD58CE29A6EE78003078B7 /* Extensions.swift */; };
+		ACCD58D129A6EF04003078B7 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD58D029A6EF04003078B7 /* AppFlow.swift */; };
+		ACCD58D329A6EF1D003078B7 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD58D229A6EF1D003078B7 /* MainMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		ACCD58B329A6C561003078B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACCD58B529A6C563003078B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACCD58B829A6C563003078B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACCD58BF29A6E86F003078B7 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		ACCD58C129A6E8CD003078B7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ACCD58C329A6E8EB003078B7 /* PuzzleVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleVIewModel.swift; sourceTree = "<group>"; };
+		ACCD58C829A6E965003078B7 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		ACCD58CA29A6EBCC003078B7 /* Knewave-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knewave-Regular.ttf"; sourceTree = "<group>"; };
+		ACCD58CC29A6EC57003078B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ACCD58CE29A6EE78003078B7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ACCD58D029A6EF04003078B7 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		ACCD58D229A6EF1D003078B7 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +68,13 @@
 		ACCD58B029A6C561003078B7 /* DragNDropPazzleGame */ = {
 			isa = PBXGroup;
 			children = (
+				ACCD58CC29A6EC57003078B7 /* Info.plist */,
 				ACCD58B129A6C561003078B7 /* DragNDropPazzleGameApp.swift */,
-				ACCD58B329A6C561003078B7 /* ContentView.swift */,
+				ACCD58CA29A6EBCC003078B7 /* Knewave-Regular.ttf */,
+				ACCD58CD29A6EE6D003078B7 /* Extensions */,
+				ACCD58C529A6E92B003078B7 /* Models */,
+				ACCD58C629A6E933003078B7 /* ViewModels */,
+				ACCD58C729A6E93D003078B7 /* Views */,
 				ACCD58B529A6C563003078B7 /* Assets.xcassets */,
 				ACCD58B729A6C563003078B7 /* Preview Content */,
 			);
@@ -65,6 +87,42 @@
 				ACCD58B829A6C563003078B7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACCD58C529A6E92B003078B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD58C129A6E8CD003078B7 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACCD58C629A6E933003078B7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD58C329A6E8EB003078B7 /* PuzzleVIewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ACCD58C729A6E93D003078B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD58D029A6EF04003078B7 /* AppFlow.swift */,
+				ACCD58B329A6C561003078B7 /* ContentView.swift */,
+				ACCD58C829A6E965003078B7 /* Loader.swift */,
+				ACCD58D229A6EF1D003078B7 /* MainMenuView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACCD58CD29A6EE6D003078B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD58BF29A6E86F003078B7 /* Constraints.swift */,
+				ACCD58CE29A6EE78003078B7 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCD58CB29A6EBCC003078B7 /* Knewave-Regular.ttf in Resources */,
 				ACCD58B929A6C563003078B7 /* Preview Assets.xcassets in Resources */,
 				ACCD58B629A6C563003078B7 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCD58C429A6E8EB003078B7 /* PuzzleVIewModel.swift in Sources */,
+				ACCD58D129A6EF04003078B7 /* AppFlow.swift in Sources */,
 				ACCD58B429A6C561003078B7 /* ContentView.swift in Sources */,
+				ACCD58D329A6EF1D003078B7 /* MainMenuView.swift in Sources */,
+				ACCD58C929A6E965003078B7 /* Loader.swift in Sources */,
+				ACCD58C029A6E86F003078B7 /* Constraints.swift in Sources */,
 				ACCD58B229A6C561003078B7 /* DragNDropPazzleGameApp.swift in Sources */,
+				ACCD58C229A6E8CD003078B7 /* Model.swift in Sources */,
+				ACCD58CF29A6EE78003078B7 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +336,7 @@
 				DEVELOPMENT_TEAM = NUUAUT9ZDU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DragNDropPazzleGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +366,7 @@
 				DEVELOPMENT_TEAM = NUUAUT9ZDU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DragNDropPazzleGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
